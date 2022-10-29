@@ -69,7 +69,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          push: ${{ env.GITVERSION_BRANCH == 'main' }}
+          push: ${{ env.GITVERSION_BRANCHNAME == 'main' }}
           file: docker/Dockerfile.nginx
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
