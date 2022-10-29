@@ -1,0 +1,6 @@
+mode: ContinuousDelivery
+assembly-informational-format: '{SemVer}-{BuildMetaData}-{ShortSha}'
+branches: {}
+ignore:
+  sha: []
+  
